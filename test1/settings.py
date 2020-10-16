@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'k=@a^6#@zk=gf_*nc(s+e8yyj7n@k%6ymmh+wz4p1bw^2=ns4t'
+SECRET_KEY = 'hecufv9le!7y*kl-ql0hy1umbl7exc$d2!uvkftzzu&)qm!6lx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'studentlist',
 ]
 
 MIDDLEWARE = [
@@ -76,11 +75,8 @@ WSGI_APPLICATION = 'test1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'StudentDB',
-        'USER': 'postgres',
-        'PASSWORD': 'KHali124816',
-        'HOST': 'localhost'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
